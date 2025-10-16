@@ -84,13 +84,13 @@ down_airflow() {
 }
 
 # ELK
-up_elk() {
-    docker-compose -f "$ELK/$ELK-docker-compose.yml" -f "$ELK/extensions/filebeat/filebeat-compose.yml" up -d "$@"
-}
+# up_elk() {
+#     docker-compose -f "$ELK/$ELK-docker-compose.yml" -f "$ELK/extensions/filebeat/filebeat-compose.yml" up -d "$@"
+# }
 
-down_elk() {
-    docker-compose -f "$ELK/$ELK-docker-compose.yml" -f "$ELK/extensions/filebeat/filebeat-compose.yml" down "$@"
-}
+# down_elk() {
+#     docker-compose -f "$ELK/$ELK-docker-compose.yml" -f "$ELK/extensions/filebeat/filebeat-compose.yml" down "$@"
+# }
 
 # FEAST
 up_feast() {
